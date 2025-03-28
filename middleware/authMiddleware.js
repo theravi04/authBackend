@@ -1,13 +1,12 @@
 const jwt = require("jsonwebtoken");
 
 const protect = (req, res, next) => {
-  let token = req.headers.authorization;
-  if (!token || !token.startsWith("Bearer ")) {
+  if (!req.cookies || !req.cookies.token) {
     return res.status(401).json({ message: "Not authorized, no token" });
   }
 
   try {
-    token = token.split(" ")[1];
+    const token = req.cookies.token; // Get token from cookies
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded;
     next();
