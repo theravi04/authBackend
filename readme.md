@@ -29,7 +29,7 @@ Login (POST Request): "/auth/login"
 
 Register (POST Request): "/auth/register"
 
-## Profile Rout
+### Profile Routes
 
 Profile (GET Request): "/user/profile"
 
