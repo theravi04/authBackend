@@ -25,9 +25,12 @@ npm install
 
 Base Url : http://localhost:5000/api
 
-Login: /auth/login
+Login (POST Request): "/auth/login"
 
-Register: /auth/register
+Register (POST Request): "/auth/register"
 
-Profile: /user/profile
-Profile Update: /user/profileUpdate
+## Profile Rout
+
+Profile (GET Request): "/user/profile"
+
+Profile Update (PUT Request): "/user/profileUpdate"
