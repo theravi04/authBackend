@@ -26,6 +26,7 @@ npm install
 Base Url : http://localhost:5000/api
 
 Login: /auth/login
+
 Register: /auth/register
 
 Profile: /user/profile
